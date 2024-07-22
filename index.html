@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GodSky | Le Skyblock des dieux</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+    <meta property="og:title" content="SkyGod | le best skyblock" />
+    <meta property="og:image" content="/logo.webp" />
+  </head>
+  <body class="relative">
+    <header>
+      <nav>
+        <ul class="flex gap-12 px-20 py-8">
+          <li>
+            <a href="/" class="text-xl uppercase font-medium text-white">Accueil</a>
+          </li>
+          <li>
+            <a href="#" class="text-xl uppercase font-medium text-white">Classements</a>
+          </li>
+          <li>
+            <a href="#" class="text-xl uppercase font-medium text-white">Evenements</a>
+          </li>
+          <li>
+            <a href="#" class="text-xl uppercase font-medium text-white">Vote</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <canvas class="fixed -z-10 left-0 top-0"></canvas>
+    <section class="h-dvh relative grid place-items-center">
+      <h1 class="text-white text-8xl uppercase">
+        GodSky <span class="text-lg">(g pa lé assets)</span>
+      </h1>
+      <div class="absolute right-4 bottom-20 w-1/3 flex flex-col items-center gap-8">
+        <p class="text-white text-2xl">Vendre le server ici mdr, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, cupiditate.</p>
+        <button class="py-2 px-4 rounded-md bg-yellow-400 text-white text-4xl font-bold uppercase">play.skygod.fr</button>
+      </div>
+    </section>
+    <section id="commu" class="h-dvh relative">
+      <div class="absolute right-12 flex flex-col gap-8 w-1/3 top-1/2 -translate-y-1/2">
+        <div>
+          <h2 class="text-white text-4xl font-bold uppercase">Un gameplay centré sur la communauté</h2>
+        </div>
+        <div id="stats" class="right-12 flex flex-col gap-2">
+          <div class="stat opacity-0 bg-zinc-900 px-4 py-2 flex flex-col gap-1 w-full rounded-md">
+            <h4 class="text-yellow-400">Casser 5000 bûches</h4>
+            <div class="flex items-center justify-between">
+              <div class="progress-p flex-1 bg-zinc-800 rounded-full">
+                <div class="progress bg-yellow-400 w-0 h-2 rounded-full"></div>
+              </div>
+              <span class="text-yellow-400 w-24 text-end">4000/5000</span>
+            </div>
+          </div>
+          <div class="stat opacity-0 bg-zinc-900 px-4 py-2 flex flex-col gap-1 w-full rounded-md">
+            <h4 class="text-yellow-400">Casser 10000 pierres</h4>
+            <div class="flex items-center justify-between">
+              <div class="progress-p flex-1 bg-zinc-800 rounded-full">
+                <div class="progress bg-yellow-400 w-0 h-2 rounded-full"></div>
+              </div>
+              <span class="text-yellow-400 w-24 text-end">4000/5000</span>
+            </div>
+          </div>
+          <div class="stat opacity-0 bg-zinc-900 px-4 py-2 flex flex-col gap-1 w-full rounded-md">
+            <h4 class="text-yellow-400">Poser 50000 blocs</h4>
+            <div class="flex items-center justify-between">
+              <div class="progress-p flex-1 bg-zinc-800 rounded-full">
+                <div class="progress bg-yellow-400 w-0 h-2 rounded-full"></div>
+              </div>
+              <span class="text-yellow-400 w-24 text-end">4000/5000</span>
+            </div>
+          </div>
+          <div class="stat opacity-0 bg-zinc-900 px-4 py-2 flex flex-col gap-1 w-full rounded-md">
+            <h4 class="text-yellow-400">Tuer 10000 monstres</h4>
+            <div class="flex items-center justify-between">
+              <div class="progress-p flex-1 bg-zinc-800 rounded-full">
+                <div class="progress bg-yellow-400 w-0 h-2 rounded-full"></div>
+              </div>
+              <span class="text-yellow-400 w-24 text-end">4000/5000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="h-dvh">
+    </section>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
