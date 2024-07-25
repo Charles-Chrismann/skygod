@@ -6,6 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 import { GLTFLoader } from 'three/examples/jsm/Addons.js';
 
+const hundredPercentElement = document.querySelector('section')!
+
 const canvas = document.querySelector('canvas')!
 
 function getRandomInt(max: number) {
@@ -280,7 +282,7 @@ function animation() {
 
 renderer.setAnimationLoop(animation)
 
-renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setSize(window.innerWidth, hundredPercentElement.clientHeight);
 addBlocks()
 
 window.addEventListener( 'resize', onWindowResize, false );
@@ -290,7 +292,7 @@ function onWindowResize(){
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
 
-    renderer.setSize( window.innerWidth, window.innerHeight );
+    renderer.setSize( window.innerWidth, hundredPercentElement.clientHeight );
 
 }
 
